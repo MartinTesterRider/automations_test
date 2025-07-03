@@ -10,6 +10,8 @@ jobs:
       region: us-east-1
       account: ctaprueba123
 
+      dbhost: ${{secrets.DB_HOST}}
+
     runs-on: ubuntu-latest
 
     # Pasos
@@ -22,6 +24,8 @@ jobs:
           echo 'Valor de Plataforma:${{ env.plataform }}'
           echo "Valor de Region:${{ env.region }}"
           echo "Valor de account:${{ env.account }}"
+
+          echo "Valor de Secreto Host:${{env.dbhost}}"
 
       - name: "Mostrar Valiables por Defecto"
         run: 
