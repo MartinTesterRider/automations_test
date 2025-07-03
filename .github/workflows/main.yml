@@ -22,3 +22,9 @@ jobs:
           echo 'Valor de Plataforma:${{ env.plataform }}'
           echo "Valor de Region:${{ env.region }}"
           echo "Valor de account:${{ env.account }}"
+
+      - name: "Mostrar Valiables por Defecto"
+        run: 
+          echo "Evento:${{toJSON(github.event)}}"
+          echo "Muesta GitHub_ACTOR:$GITHUB_ACTOR"
+          echo "Muesta GitHub_REPOSITORY:$GITHUB_REPOSITORY"
