@@ -11,6 +11,9 @@ jobs:
       account: ctaprueba123
 
       dbhost: ${{secrets.DB_HOST}}
+      dbname: ${{secrets.DB_NAME}}
+      dbpass: ${{secrets.DB_PASS}}
+      dbuser: ${{secrets.DB_USER}}
 
     runs-on: ubuntu-latest
 
@@ -26,6 +29,9 @@ jobs:
           echo "Valor de account:${{ env.account }}"
 
           echo "Valor de Secreto Host:${{env.dbhost}}"
+          echo "Valor de Secreto Name:${{env.dbname}}"
+          echo "Valor de Secreto Pass:${{env.dbpass}}"
+          echo "Valor de Secreto User:${{env.dbuser}}"
 
       - name: "Mostrar Valiables por Defecto"
         run: 
