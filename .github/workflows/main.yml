@@ -1,7 +1,10 @@
 name: Previo a Playwright Tests
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
