@@ -3,13 +3,22 @@ on:
   push:
     branches: [ "main" ]
 
-  workflow_dispatch:
-
 jobs:
   build:
+    env:
+      plataform: aws
+      region: us-east-1
+      account: ctaprueba123
+
     runs-on: ubuntu-latest
 
     # Pasos
     steps:
       - name: "Solo muetsra Mensaje"
-        run: echo "Alo alo mUndo, Tudo bem!"
+        run: echo "Alo alo Mundo, Tudo bem!"
+
+      - name: "Mostrar Variables de entorno"
+        run: 
+          echo 'Valor de Plataforma:${{ env.plataform }}'
+          echo "Valor de Region:${{ env.region }}"
+          echo "Valor de account:${{ env.account }}"
