@@ -33,6 +33,7 @@ jobs:
           echo "Valor de Secreto Host:${{env.dbhost}}"
           echo "Valor de Secreto Name:${{env.dbname}}"
           echo "Valor de Secreto User:${{env.dbuser}}"
+          echo "Valor de Secreto Pass:${{env.dbpass}}"
 
       - name: "Mostrar Valiables por Defecto"
         run: 
