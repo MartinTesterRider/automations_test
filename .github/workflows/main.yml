@@ -28,11 +28,13 @@ jobs:
           echo "Valor de Region:${{ env.region }}"
           echo "Valor de account:${{ env.account }}"
 
+          echo "Valores Secretos"
+
           echo "Valor de Secreto Host:${{env.dbhost}}"
           echo "Valor de Secreto Name:${{env.dbname}}"
           echo "Valor de Secreto Pass:${{env.dbpass}}"
           echo "Valor de Secreto User:${{env.dbuser}}"
-          
+
       - name: "Mostrar Valiables por Defecto"
         run: 
           echo "Evento:${{toJSON(github.event)}}"
