@@ -22,7 +22,7 @@ jobs:
       - name: "Solo muetsra Mensaje 1"
         run: echo "Alo alo Mundo, Tudo bem! 4Jul25"
 
-      - name: "Mostrar Variables de entorno Julio 4 se usa_ Nh]?R`x#Sy001Z}~ PRUEBA"
+      - name: "Mostrar Variables de entorno Julio 4 PRUEBA ok"
         run: 
           echo 'Valor de Plataforma:${{ env.plataform }}'
           echo "Valor de Region:${{ env.region }}"
