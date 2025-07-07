@@ -38,7 +38,7 @@ test('03-login_case Julio7 fondos con sequelize', async ({ page }) => {
 
     await page.waitForTimeout(7_000);
 
-    //await page.locator('button#send-login').click();
+    await page.locator('button#send-login').click();
 /* 7 Julio Deshabilitar 2FA
     const users = await User.findAll({raw: true, where: {email: testData[0].mail}})
 

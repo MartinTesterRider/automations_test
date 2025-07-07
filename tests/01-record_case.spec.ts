@@ -27,7 +27,7 @@ test('01_record_case Jul 7 Record Case to get Funding', async ({ page }) => {
   await page.goto(url);
 
   // Pagina de Preregistro
-  await page.locator('input#preregistered_user-email').fill('rider.tester23+E2ECaso0Jul7@gmail.com');
+  await page.locator('input#preregistered_user-email').fill('rider.tester23+E2ECaso0Julio7@gmail.com');
   await page.waitForTimeout(4_000);
   await page.locator('input#preregistered_user-password').fill('caso0cero');
 
