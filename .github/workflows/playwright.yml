@@ -1,7 +1,7 @@
-name: Playwright Tests mx_14_00 Ser 10:45
+name: Playwright Tests mx_18_00 Ser 24:45
 on:
   schedule:
-    - cron: '50 21 * * *'
+    - cron: '40 24 * * *'
 jobs:
   test:
     timeout-minutes: 60
