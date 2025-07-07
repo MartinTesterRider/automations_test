@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { LoginPage } from '../pageobjects/login/LoginPage';
 //import { preregistered_user } from '../db/db_users_data';
-import { getTwo_Factor } from '../db/db_users_data';
+//import { getTwo_Factor } from '../db/db_users_data';
 
 //import { preregistered_user } from '../db/db_users_data';
 import { getUsers, borra_terms_and_conditions_agreements, borra_de_email_validation, borra_de_user } from '../db/db_users_delete';
@@ -11,7 +11,7 @@ import { borra_de_case, borra_de_preregistered_case, borra_de_preregistered_user
 
 // 1) REGISTRO
 
-test('01_record_case Record Case to get Funding', async ({ page }) => {
+test('01_record_case Jul 7 Record Case to get Funding', async ({ page }) => {
   test.setTimeout(170000)
 
 /*

@@ -4,15 +4,15 @@ import { getTwo_Factor } from '../db/db_users_data';
 */
 import { LoginPage } from '../pageobjects/login/LoginPage';
 
-import { sequelize } from '../dbz/db';
+//import { sequelize } from '../dbz/db';
 
-import { User } from '../models/User';
-
+//import { User } from '../models/User';
+/*
 test.beforeAll(async () => {
   await sequelize.authenticate();
   await sequelize.sync(); // opcional: asegura sincronización con la BD
 });
-
+*/
 const testData = [
  {
    mail: 'rider.tester23+E2ECaso2@gmail.com',
