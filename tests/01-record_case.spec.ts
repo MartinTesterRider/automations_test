@@ -6,8 +6,10 @@ import { LoginPage } from '../pageobjects/login/LoginPage';
 //import { getTwo_Factor } from '../db/db_users_data';
 
 //import { preregistered_user } from '../db/db_users_data';
+/*
 import { getUsers, borra_terms_and_conditions_agreements, borra_de_email_validation, borra_de_user } from '../db/db_users_delete';
 import { borra_de_case, borra_de_preregistered_case, borra_de_preregistered_user } from '../db/db_delete_case';
+*/
 
 // 1) REGISTRO
 
