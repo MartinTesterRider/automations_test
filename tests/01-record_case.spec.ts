@@ -25,7 +25,7 @@ test('01_record_case Record Case to get Funding', async ({ page }) => {
   await page.goto(url);
 
   // Pagina de Preregistro
-  await page.locator('input#preregistered_user-email').fill('rider.tester23+E2ECaso0@gmail.com');
+  await page.locator('input#preregistered_user-email').fill('rider.tester23+E2ECaso0Jul7@gmail.com');
   await page.waitForTimeout(4_000);
   await page.locator('input#preregistered_user-password').fill('caso0cero');
 
@@ -102,7 +102,7 @@ test('01_record_case Record Case to get Funding', async ({ page }) => {
   await page.waitForTimeout(2_000);
 
   // Step 2
-  await page.locator('input[id="user_first_name"]').fill('Martin E2ECaso0');
+  await page.locator('input[id="user_first_name"]').fill('Martin E2ECaso0Jul7');
   await page.locator('input[id="user_last_name"]').fill('Dorantes Testcaso0');
   
   await page.locator('select[id="user_lang"]').selectOption('English')

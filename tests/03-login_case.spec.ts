@@ -39,7 +39,7 @@ test('03-login_case Julio7 fondos con sequelize', async ({ page }) => {
     await page.waitForTimeout(7_000);
 
     //await page.locator('button#send-login').click();
-
+/* 7 Julio Deshabilitar 2FA
     const users = await User.findAll({raw: true, where: {email: testData[0].mail}})
 
     const codigo = users[0].sms_code.toString();
@@ -52,7 +52,8 @@ test('03-login_case Julio7 fondos con sequelize', async ({ page }) => {
 
     //await page.locator('//button[contains(text(), \'Continue\')]').click()
     await page.locator('button#send-two-factor').click()
-
+ 7 Julio Deshabilitar 2FA
+ */
     //await page.pause();
     await page.close();
 
