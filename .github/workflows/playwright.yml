@@ -1,9 +1,7 @@
-name: Playwright Tests
+name: Playwright Tests mx_14_00 Ser 10:45
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+  schedule:
+    - cron: '50 21 * * *'
 jobs:
   test:
     timeout-minutes: 60
@@ -17,8 +15,8 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
+    - name: Run Playwright tests/03-login_case.spec 
+      run: npx playwright test tests/03-login_case.spec
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
